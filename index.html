@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<title>Tic Tac Toe Mini Game</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="js/index.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div id="header">
+		<h1>Tic Tac Toe Mini Game</h1>
+	</div>
+	<div id="options_and_conditions">
+		<p class="mb-0">Options:</p>
+		<form id="options">
+			<label for="boardsize_input">Board Size:</label>
+			<input id="boardsize_input" type="number" min="3" value="3" max="25"></input>
+		</form>
+		<div id="conditions">
+			<p>Game Played: <span id="game_played"></span></p>
+			<p>Player 'X' win : <span id="player_x_win_count"></span> | Player 'O' win : <span id="player_o_win_count"></span> | Tie: <span id="tie_count"></span></p>
+		</div>
+		<div class="button-container">
+			<button id="options_submit">Play!</button>
+			<button id="reset_score">Reset Score and Game</button>
+		</div>
+	</div>
+	<div id="turn_indicator"></div>
+	<div id="board_container"></div>
+</body>
+
+</html>
